@@ -6,3 +6,7 @@
 \#*#
 peda-session-*
 *.out
+*.wav
+*.raw
+*.dat
+*.ogg
