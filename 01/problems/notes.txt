@@ -1,0 +1,32 @@
+# p00
+- stdio.h と stdlib.h を include
+
+# p01
+- math.h を include
+- cos2 と sin2 をプロトタイプ宣言
+- コンパイルオプション -lm
+
+# p02
+- stdio.h と stdlib.h を include
+
+# p03
+- -lm
+- mk_point 中で p に malloc
+
+# p04
+- -lm
+- mk_point 中で p に malloc
+
+# p05
+- p05 が pO5 になっている
+
+# p06
+- unistd.h と fcntl.h を include
+- p06 が pO6 になっている
+
+# p07
+- ループの最後に s = t; を足す
+
+# p08
+- =+ =- を += -= にする
+- ( ) のときにポインタを進めていない
