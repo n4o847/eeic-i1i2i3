@@ -1,17 +1,17 @@
 /* 
- * fft.c
- * 使い方
- *   ./fft n
- * 
+ * bandpass.c
+ *
+ * usage:
+ *   ./bandpass [n] [fl] [fh]
+ *
  * 以下を繰り返す:
  *   標準入力から, 16 bit integerをn個読む
  *   FFTする
+ *   flとfhの間の周波数の成分だけ残す
  *   逆FFTする
  *   標準出力へ出す
- *
- * したがって「ほぼ何もしない」フィルタになる
- * 
  */
+
 #include <assert.h>
 #include <complex.h>
 #include <math.h>
@@ -179,7 +179,7 @@ int main(int argc, char ** argv) {
     print_complex(wp, Y, n);
     fprintf(wp, "----------------\n");
 
-    /* flからfhの周波数の成分だけを残す */
+    /* flとfhの間の周波数の成分だけを残す */
     bandpass(Y, n, fl, fh);
 
     /* IFFT -> Z */
