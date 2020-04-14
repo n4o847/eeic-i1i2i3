@@ -10,3 +10,4 @@ peda-session-*
 *.raw
 *.dat
 *.ogg
+/sub.zip
