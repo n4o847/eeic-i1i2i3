@@ -18,6 +18,11 @@
  *    0.000000
  */
 
+/* 
+ * fix:
+ *   stdio.h と stdlib.h を include
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -10,6 +10,11 @@
  *   It reads the contents of this file and print it.
  */
 
+/* 
+ * fix:
+ *   "pO5.c" を "p05.c" に直す
+ */
+
 #include <assert.h>
 #include <stdio.h>
 int main()

@@ -14,6 +14,11 @@
  * memory dynamically and grows it when necessary
  */
 
+/* 
+ * fix:
+ *   ループの最後に s = t; を足す
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <strings.h>

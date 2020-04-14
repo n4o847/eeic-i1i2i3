@@ -12,8 +12,12 @@
  *
  */
 
+/* 
+ * fix:
+ *   stdio.h を include する
+ */
+
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {

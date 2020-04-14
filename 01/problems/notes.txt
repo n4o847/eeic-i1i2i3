@@ -1,5 +1,5 @@
 # p00
-- stdio.h と stdlib.h を include
+- stdio.h を include
 
 # p01
 - math.h を include
@@ -30,3 +30,4 @@
 # p08
 - =+ =- を += -= にする
 - ( ) のときにポインタを進めていない
+- warning: control reaches end of non-void function [-Wreturn-type]

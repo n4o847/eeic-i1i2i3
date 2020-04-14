@@ -15,6 +15,13 @@
  *
  */
 
+/* 
+ * fix:
+ *   math.h を include する
+ *   cos2 と sin2 をプロトタイプ宣言する
+ *   コンパイルオプション -lm をつける
+ */
+
 #include <stdio.h>
 #include <math.h>
 

@@ -64,6 +64,16 @@ of repetition of '...'.
 
 */
 
+/* 
+ * fix:
+ *   =+ =- を += -= に直す
+ *   ( ) のときにポインタを進め忘れているので直す
+ *   H_expression が return の判定で警告を出すので直す
+ *     最後に return 0; をつけることで解決できるが、これは無駄な処理
+ *     syntax_error が exit などと同様に扱われるように attribute をつける
+ *       コンパイラ拡張なので解決策としては微妙かもしれない
+ */
+
 #include <errno.h>
 #include <math.h>
 #include <stdio.h>
@@ -85,6 +95,7 @@ line: |2|3|+|3|*|6|7|-|(|3|+|4|)| | | |
 
  */
 
+__attribute__((noreturn))
 void syntax_error()
 {
   fprintf(stderr, "syntax error:\n");

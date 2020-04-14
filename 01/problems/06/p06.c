@@ -12,6 +12,12 @@
  *
  */
 
+/* 
+ * fix:
+ *   unistd.h と fcntl.h を include する
+ *   "pO6.c" を "p06.c" に直す
+ */
+
 #include <unistd.h>
 #include <fcntl.h>
 

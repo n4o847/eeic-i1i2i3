@@ -17,6 +17,12 @@
  *                |A| |B|
  */
 
+/* 
+ * fix:
+ *   mk_point 中の p をヒープ領域に確保する
+ *   コンパイルオプション -lm をつける
+ */
+
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
