@@ -1,3 +1,13 @@
+/* 
+ * read_data.c
+ *
+ * usage:
+ *   ./read_data [file]
+ *
+ * [file] を開き、何バイト目が何という
+ * バイトだったかを 2 カラムで表示する。
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
